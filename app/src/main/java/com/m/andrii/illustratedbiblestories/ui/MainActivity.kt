@@ -1,7 +1,8 @@
-package com.m.andrii.illustratedbiblestories
+package com.m.andrii.illustratedbiblestories.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.m.andrii.illustratedbiblestories.R
 
 class MainActivity : AppCompatActivity() {
 
