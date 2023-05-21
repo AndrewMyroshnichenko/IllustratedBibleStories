@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fragment_start_app_background"
-    tools:context=".StartAppFragment">
+    android:background="@drawable/menu_gradient_background"
+    tools:context=".ui.fragments.StartAppFragment">
 
     <ImageView
         android:id="@+id/iv_start_app_top"

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">IllustratedBibleStories</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="start_app_phrase">Illustrated Bible Stories</string>
+    <string name="bible_stories">BIBLE STORIES</string>
 </resources>
