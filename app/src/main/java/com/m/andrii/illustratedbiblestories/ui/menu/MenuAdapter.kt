@@ -1,5 +1,6 @@
 package com.m.andrii.illustratedbiblestories.ui.menu
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.m.andrii.illustratedbiblestories.R
 import com.m.andrii.illustratedbiblestories.models.TitleItem
+import com.squareup.picasso.Picasso
 
 class MenuAdapter : ListAdapter<TitleItem, MenuAdapter.MenuViewHolder>(
     DIFF_CALLBACK
@@ -28,11 +30,12 @@ class MenuAdapter : ListAdapter<TitleItem, MenuAdapter.MenuViewHolder>(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
-        TODO("Not yet implemented")
+        return MenuViewHolder(LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_title, parent, false))
     }
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.bind(getItem(position))
     }
 
     class MenuViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -40,7 +43,10 @@ class MenuAdapter : ListAdapter<TitleItem, MenuAdapter.MenuViewHolder>(
         private val imageView: ImageView = itemView.findViewById(R.id.iv_item)
 
         fun bind(item: TitleItem) {
-
+                textView.text = item.title
+                Picasso.get()
+                    .load(item.imageUrl)
+                    .into(imageView)
         }
     }
 }
