@@ -1,4 +1,4 @@
-package com.m.andrii.illustratedbiblestories.ui.fragments
+package com.m.andrii.illustratedbiblestories.ui.menu
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
