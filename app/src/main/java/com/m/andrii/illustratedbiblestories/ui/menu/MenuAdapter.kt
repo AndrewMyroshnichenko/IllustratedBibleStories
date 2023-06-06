@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.m.andrii.illustratedbiblestories.R
-import com.m.andrii.illustratedbiblestories.models.TitleItem
+import com.m.andrii.illustratedbiblestories.model.titles.entities.TitleItem
 import com.squareup.picasso.Picasso
 
 class MenuAdapter : ListAdapter<TitleItem, MenuAdapter.MenuViewHolder>(
