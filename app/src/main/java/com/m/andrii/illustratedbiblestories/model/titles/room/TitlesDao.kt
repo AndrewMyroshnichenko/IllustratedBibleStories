@@ -1,6 +1,5 @@
 package com.m.andrii.illustratedbiblestories.model.titles.room
 
-import android.icu.text.CaseMap.Title
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
