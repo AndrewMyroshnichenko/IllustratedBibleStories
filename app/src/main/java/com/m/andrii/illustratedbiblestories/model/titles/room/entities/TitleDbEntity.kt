@@ -1,5 +1,6 @@
 package com.m.andrii.illustratedbiblestories.model.titles.room.entities
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.m.andrii.illustratedbiblestories.model.titles.entities.TitleItem
@@ -9,9 +10,9 @@ import com.m.andrii.illustratedbiblestories.model.titles.entities.TitleItem
 )
 data class TitleDbEntity(
     @PrimaryKey(autoGenerate = true) val id: Int,
-    val title: String,
-    val titleContext: String,
-    val imageUrl: String
+    @ColumnInfo(name = "title") val title: String,
+    @ColumnInfo(name = "title_context") val titleContext: String,
+    @ColumnInfo(name = "img_url")val imageUrl: String
 ) {
 
     fun toTitleItem(): TitleItem = TitleItem(

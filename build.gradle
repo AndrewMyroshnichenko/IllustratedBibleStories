@@ -1,10 +1,5 @@
 buildscript {
     ext.room_version = "2.5.1"
-
-    repositories {
-        google()
-        mavenCentral()
-    }
 }
 
 plugins {

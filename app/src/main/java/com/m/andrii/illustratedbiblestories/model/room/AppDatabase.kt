@@ -8,8 +8,8 @@ import com.m.andrii.illustratedbiblestories.model.titles.room.TitlesDao
 import com.m.andrii.illustratedbiblestories.model.titles.room.entities.TitleDbEntity
 
 @Database(
-    version = 1,
-    entities = [TitleDbEntity::class]
+    entities = [TitleDbEntity::class],
+    version = 1
 )
 abstract class AppDatabase : RoomDatabase() {
 
