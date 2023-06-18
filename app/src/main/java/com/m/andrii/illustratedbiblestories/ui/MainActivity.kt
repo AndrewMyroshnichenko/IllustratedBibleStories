@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         val s = db.getTitlesDao().getAllTitles().asLiveData().observe(this){list ->
             bind?.tv?.text = ""
             list.forEach {
-                val text = "${it?.id} ${it?.title} ${it?.titleContext} ${it?.imageUrl}"
+                val text = "${it?.id} ${it?.title} ${it?.titleContext} ${it?.imageUrl} \n"
                 bind?.tv?.append(text)
             }
         }
         Thread{
-            db.getTitlesDao().insertTitle(TitleDbEntity(1, "4", "5", "8"))
+            db.getTitlesDao().insertTitle(TitleDbEntity(0, "4", "5", "8"))
         }.start()
 
     }
