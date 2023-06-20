@@ -7,8 +7,8 @@ import kotlinx.coroutines.flow.map
 
 class RoomTitlesRepository(private val dao: TitlesDao) : TitlesRepository {
 
-    override fun getAllTitles(language: String): Flow<List<TitleItem?>> {
-        return dao.getAllTitles().map { list -> list.map {it?.toTileItem(language) } }
+    override fun getAllTitles(language: String): List<TitleItem?> {
+        return dao.getAllTitles().map {it?.toTileItem(language) }
     }
 
 }

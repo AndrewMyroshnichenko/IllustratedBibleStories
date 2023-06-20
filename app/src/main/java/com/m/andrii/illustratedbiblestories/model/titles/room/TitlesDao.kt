@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 interface TitlesDao {
 
     @Query("SELECT * FROM titles")
-    fun getAllTitles(): Flow<List<TitleDbEntity?>>
+    fun getAllTitles(): List<TitleDbEntity?>
 
     @Insert
     fun insertTitle(item: TitleDbEntity)

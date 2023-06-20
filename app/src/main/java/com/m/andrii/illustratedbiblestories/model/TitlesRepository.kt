@@ -6,6 +6,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface TitlesRepository {
 
-    fun getAllTitles(language: String): Flow<List<TitleItem?>>
+    fun getAllTitles(language: String): List<TitleItem?>
 
 }
