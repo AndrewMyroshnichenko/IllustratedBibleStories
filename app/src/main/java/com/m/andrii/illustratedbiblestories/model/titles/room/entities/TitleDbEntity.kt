@@ -13,12 +13,12 @@ data class TitleDbEntity(
 
     @ColumnInfo(name = "title_en") val titleEn: String,
     @ColumnInfo(name = "title_ru") val titleRu: String,
-    @ColumnInfo(name = "title_ua") val titleUa: String,
+    @ColumnInfo(name = "title_ua") val titleUa: String, //This language isn't available in the Locale class
     @ColumnInfo(name = "title_de") val titleDe: String,
     @ColumnInfo(name = "title_es") val titleEs: String,
     @ColumnInfo(name = "title_fr") val titleFr: String,
     @ColumnInfo(name = "title_it") val titleIt: String,
-    @ColumnInfo(name = "title_ju") val titleJu: String,
+    @ColumnInfo(name = "title_ju") val titleJu: String, //Yugoslavia is not an existing country
     @ColumnInfo(name = "title_hu") val titleHu: String,
     @ColumnInfo(name = "title_pl") val titlePl: String,
     @ColumnInfo(name = "title_pt") val titlePt: String,
