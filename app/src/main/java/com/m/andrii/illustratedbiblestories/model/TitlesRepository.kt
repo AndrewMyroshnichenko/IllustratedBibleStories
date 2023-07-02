@@ -8,4 +8,6 @@ interface TitlesRepository {
 
     fun getAllTitles(language: String): List<TitleItem?>
 
+    fun getTitle(language: String, titleId: Int): TitleItem?
+
 }

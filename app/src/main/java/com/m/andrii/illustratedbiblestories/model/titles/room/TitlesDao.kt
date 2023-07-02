@@ -12,7 +12,7 @@ interface TitlesDao {
     @Query("SELECT * FROM titles")
     fun getAllTitles(): List<TitleDbEntity?>
 
-    @Insert
-    fun insertTitle(item: TitleDbEntity)
+    @Query("SELECT * FROM titles WHERE id = :titleId")
+    fun getTitle(titleId: Int): TitleDbEntity?
 
 }
