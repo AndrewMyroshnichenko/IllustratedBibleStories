@@ -1,4 +1,4 @@
-package com.m.andrii.illustratedbiblestories.ui.fragments
+package com.m.andrii.illustratedbiblestories.ui.screens.menu
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,11 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.m.andrii.illustratedbiblestories.R
 
+class MenuFragment : Fragment() {
 
-class StartAppFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        arguments?.let {
+        }
     }
 
     override fun onCreateView(
@@ -19,7 +21,7 @@ class StartAppFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_start_app, container, false)
+        return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
 }

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/menu_gradient_background"
-    tools:context=".ui.menu.MenuFragment">
+    android:background="@drawable/old_book_background"
+    tools:context=".ui.screens.menu.MenuFragment">
 
     <TextView
         android:id="@+id/tv_main_menu"
@@ -13,11 +13,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="@string/bible_stories"
-        android:textColor="@color/white"
+        android:textColor="@color/brown_dark"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SplashSofiaSansBoldFont"/>
+
+    <ImageButton
+        android:id="@+id/ib_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_language_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_main_menu"
+        app:layout_constraintEnd_toEndOf="@+id/rv_main_menu"
+        app:layout_constraintTop_toTopOf="@+id/tv_main_menu" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main_menu"

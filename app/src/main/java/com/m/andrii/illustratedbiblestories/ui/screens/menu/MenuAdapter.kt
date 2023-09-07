@@ -1,4 +1,4 @@
-package com.m.andrii.illustratedbiblestories.ui.menu
+package com.m.andrii.illustratedbiblestories.ui.screens.menu
 
 import android.view.LayoutInflater
 import android.view.View

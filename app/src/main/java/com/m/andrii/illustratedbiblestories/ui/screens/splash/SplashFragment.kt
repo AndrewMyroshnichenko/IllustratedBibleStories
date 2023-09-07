@@ -1,4 +1,4 @@
-package com.m.andrii.illustratedbiblestories.ui.fragments
+package com.m.andrii.illustratedbiblestories.ui.screens.splash
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.m.andrii.illustratedbiblestories.R
 
-class ImageStoryFragment : Fragment() {
 
+class SplashFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +18,8 @@ class ImageStoryFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_image_story, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_splash, container, false)
     }
+
 }
